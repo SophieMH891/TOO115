@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{831A854A-1AB0-4104-A281-C8F421BE630E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BOLTRA_UES.Interfaz</RootNamespace>
+    <AssemblyName>BOLTRA_UES.Interfaz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BOLTRA_UES.Interfaz.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\Desktop\Bunifu UI\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmBuscarOfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarOfer.Designer.cs">
+      <DependentUpon>FrmBuscarOfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpleo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpleo.Designer.cs">
+      <DependentUpon>FrmEmpleo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEmpresa.Designer.cs">
+      <DependentUpon>FrmEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmError.Designer.cs">
+      <DependentUpon>FrmError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipalA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipalA.Designer.cs">
+      <DependentUpon>FrmPrincipalA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrincipalAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipalAdmin.Designer.cs">
+      <DependentUpon>FrmPrincipalAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRegistroA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRegistroA.Designer.cs">
+      <DependentUpon>FrmRegistroA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSuccess.Designer.cs">
+      <DependentUpon>FrmSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWarning.Designer.cs">
+      <DependentUpon>FrmWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmBuscarOfer.resx">
+      <DependentUpon>FrmBuscarOfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpleo.resx">
+      <DependentUpon>FrmEmpleo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEmpresa.resx">
+      <DependentUpon>FrmEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmError.resx">
+      <DependentUpon>FrmError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipalA.resx">
+      <DependentUpon>FrmPrincipalA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipalAdmin.resx">
+      <DependentUpon>FrmPrincipalAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRegistroA.resx">
+      <DependentUpon>FrmRegistroA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSuccess.resx">
+      <DependentUpon>FrmSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWarning.resx">
+      <DependentUpon>FrmWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IMG\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BOLTRA_UES.BL\BOLTRA_UES.BL.csproj">
+      <Project>{e83afe89-b901-41c1-9bdc-e5a3a3f62da4}</Project>
+      <Name>BOLTRA_UES.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOLTRA_UES.DAL\BOLTRA_UES.DAL.csproj">
+      <Project>{d8997e81-2d06-40d1-8c3f-9dcce88b759d}</Project>
+      <Name>BOLTRA_UES.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BOLTRA_UES.EN\BOLTRA_UES.EN.csproj">
+      <Project>{4bcd408a-b9ab-4b62-8fcb-3e6ed654aa2e}</Project>
+      <Name>BOLTRA_UES.EN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
