@@ -63,6 +63,5 @@ C:\Users\SophieMH\source\repos\BOLTRA_UES-master\BOLTRA_UES.BL\bin\Debug\K4os.Ha
 C:\Users\SophieMH\source\repos\BOLTRA_UES-master\BOLTRA_UES.BL\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\SophieMH\source\repos\BOLTRA_UES-master\BOLTRA_UES.BL\obj\Debug\BOLTRA_UES.BL.csproj.AssemblyReference.cache
 C:\Users\SophieMH\source\repos\BOLTRA_UES-master\BOLTRA_UES.BL\obj\Debug\BOLTRA_UES.BL.csproj.CoreCompileInputs.cache
-C:\Users\SophieMH\source\repos\BOLTRA_UES-master\BOLTRA_UES.BL\obj\Debug\BOLTRA_UES.BL.csproj.CopyComplete
 C:\Users\SophieMH\source\repos\BOLTRA_UES-master\BOLTRA_UES.BL\obj\Debug\BOLTRA_UES.BL.dll
 C:\Users\SophieMH\source\repos\BOLTRA_UES-master\BOLTRA_UES.BL\obj\Debug\BOLTRA_UES.BL.pdb
