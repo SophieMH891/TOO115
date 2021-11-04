@@ -9,16 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BOLTRA_UES.BL;
 using BOLTRA_UES.EN;
+using BOLTRA_UES.DAL;
+
 
 
 namespace BOLTRA_UES.Interfaz
 {
     public partial class FrmEmpresa : Form
     {
+        MarcaTabla obje = new MarcaTabla();
         public FrmEmpresa()
         {
             InitializeComponent();
         }
+        BDComun cmda = new BDComun();
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -30,7 +34,7 @@ namespace BOLTRA_UES.Interfaz
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        public void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -46,6 +50,7 @@ namespace BOLTRA_UES.Interfaz
                 _empresasBL.AgregarEmpresa(_empresa);
                 MessageBox.Show("La empresa fue registrada con exito");
             }
+            tablaEmpresas.DataSource = obje.VistaTabla();
 
         }
 
@@ -66,6 +71,7 @@ namespace BOLTRA_UES.Interfaz
 
         private void FrmEmpresa_Load(object sender, EventArgs e)
         {
+            tablaEmpresas.DataSource = obje.VistaTabla();
 
         }
     }
